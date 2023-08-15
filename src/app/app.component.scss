@@ -1,0 +1,27 @@
+:host {
+    font-size: var(--font-size-14);
+}
+
+@media only screen and (min-width: 992px) {
+    .aside {
+        position: fixed;
+        width: 11rem;
+        background-color: white;
+        top: 1rem;
+        left: 1rem;
+        bottom: 1rem;
+        border-radius: 16px;
+    }
+
+    .main-container {
+        margin-left: 12rem;
+    }
+
+    .pages {
+        padding: 1.5rem;
+        height: 100%;
+        background-color: white;
+        border-radius: 16px;
+        min-height: calc(100vh - 2rem);
+    }
+}

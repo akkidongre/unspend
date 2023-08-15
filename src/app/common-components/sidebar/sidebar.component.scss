@@ -1,0 +1,51 @@
+:host {
+    padding: 1rem;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
+        background-color: var(--green300);
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--purple500);
+    }
+
+    &__text {
+        font-size: var(--font-size-20);
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+
+    &:hover {
+        color: var(--green500);
+    }
+
+    &.active {
+        box-shadow: 1px 2px 12px 2px rgba(0, 0, 0, 0.1);
+        background-color: var(--green500);
+        color: white;
+    }
+}
